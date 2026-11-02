@@ -1,136 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Precios BTC y ETH en vivo</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #0f172a;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-    }
-    .contenedor {
-      background: #1e293b;
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      text-align: center;
-      min-width: 320px;
-    }
-    h1 {
-      font-size: 1.3rem;
-      margin-bottom: 25px;
-      color: #94a3b8;
-    }
-    .precio {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 20px;
-      margin: 10px 0;
-      background: #334155;
-      border-radius: 10px;
-    }
-    .moneda {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: bold;
-    }
-    .icono {
-      width: 28px;
-      height: 28px;
-    }
-    .valor {
-      font-size: 1.2rem;
-      color: #4ade80;
-      font-weight: bold;
-    }
-    .estado {
-      margin-top: 15px;
-      font-size: 0.8rem;
-      color: #64748b;
-    }
-    .error {
-      color: #f87171;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manzana (MNZN) - La Meme Coin de Solana 🍎</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">🍎 MANZANA</div>
+            <div class="nav-links">
+                <a href="#about">Sobre</a>
+                <a href="#tokenomics">Tokenomics</a>
+                <a href="#contract">Contrato</a>
+                <a href="#community">Comunidad</a>
+            </div>
+        </nav>
 
-  <div class="contenedor">
-    <h1>💰 Precios en vivo</h1>
+        <div class="hero-content">
+            <div class="apple-emoji">🍎</div>
+            <h1>MANZANA</h1>
+            <p class="ticker">$MNZN</p>
+            <p class="tagline">Una manzana al día... ¡y a la luna! 🚀</p>
+            <div class="hero-buttons">
+                <a href="#contract" class="btn btn-primary">Ver Contrato</a>
+                <a href="#community" class="btn btn-secondary">Únete a la Comunidad</a>
+            </div>
+        </div>
+    </header>
 
-    <div class="precio">
-      <div class="moneda">
-        <img class="icono" src="https://assets.coingecko.com/coins/images/1/small/bitcoin.png" alt="BTC">
-        Bitcoin (BTC)
-      </div>
-      <span class="valor" id="precio-btc">Cargando...</span>
-    </div>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>🍏 Sobre Manzana</h2>
+        <div class="about-content">
+            <p>
+                <strong>Manzana (MNZN)</strong> es una meme coin nacida en la red de <strong>Solana</strong>, 
+                inspirada en la fruta más icónica y sabrosa del mundo: la manzana. 🍎
+            </p>
+            <p>
+                Nacida como un experimento comunitario, Manzana busca traer frescura, diversión y 
+                buen humor al ecosistema de las criptomonedas. Sin promesas vacías, sin utilidad forzada: 
+                solo una comunidad que cree en el poder de una buena manzana.
+            </p>
+            <p>
+                Aprovechando la velocidad y las bajas comisiones de Solana, Manzana está aquí 
+                para demostrar que las meme coins pueden ser frescas, divertidas y deliciosas. 🍏🚀
+            </p>
+            <p class="disclaimer">
+                ⚠️ <em>Este es un proyecto de meme coin. No es una inversión financiera. 
+                Haz tu propia investigación (DYOR).</em>
+            </p>
+        </div>
+    </section>
 
-    <div class="precio">
-      <div class="moneda">
-        <img class="icono" src="https://assets.coingecko.com/coins/images/279/small/ethereum.png" alt="ETH">
-        Ethereum (ETH)
-      </div>
-      <span class="valor" id="precio-eth">Cargando...</span>
-    </div>
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="section section-alt">
+        <h2>📊 Tokenomics</h2>
+        <div class="tokenomics-grid">
+            <div class="token-card">
+                <h3>Nombre</h3>
+                <p class="token-value">Manzana</p>
+            </div>
+            <div class="token-card">
+                <h3>Ticker</h3>
+                <p class="token-value">$MNZN</p>
+            </div>
+            <div class="token-card">
+                <h3>Red</h3>
+                <p class="token-value">Solana</p>
+            </div>
+            <div class="token-card">
+                <h3>Supply Total</h3>
+                <p class="token-value">1,000,000,000</p>
+                <p class="token-sub">(1 Billón de MNZN)</p>
+            </div>
+        </div>
+    </section>
 
-    <p class="estado" id="estado">Última actualización: --</p>
-  </div>
+    <!-- Contract Section -->
+    <section id="contract" class="section">
+        <h2>📜 Dirección del Contrato</h2>
+        <p class="contract-intro">
+            Añade este contrato a tu wallet para ver tus tokens Manzana:
+        </p>
+        <div class="contract-box">
+            <code id="contractAddress">PENDIENTE_DE_ACTUALIZAR_AL_CREAR_EL_TOKEN</code>
+            <button id="copyBtn" class="btn btn-copy" onclick="copyContract()">
+                📋 Copiar
+            </button>
+        </div>
+        <p class="contract-note">
+            ⚠️ La dirección se actualizará tras el lanzamiento oficial del token en Solana.
+        </p>
+    </section>
 
-  <script>
-    // Formateador de moneda en USD
-    const formatoUSD = new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD',
-      minimumFractionDigits: 2
-    });
+    <!-- Community Section -->
+    <section id="community" class="section section-alt">
+        <h2>🌐 Únete a la Comunidad</h2>
+        <div class="social-links">
+            <a href="#" class="social-card" target="_blank">🐦 Twitter / X</a>
+            <a href="#" class="social-card" target="_blank">💬 Telegram</a>
+            <a href="#" class="social-card" target="_blank">🎮 Discord</a>
+            <a href="#" class="social-card" target="_blank">📈 DEX Screener</a>
+        </div>
+        <p class="community-note">
+            Los enlaces se añadirán tras el lanzamiento del token. ¡Mantente atento! 🍎
+        </p>
+    </section>
 
-    async function obtenerPrecios() {
-      const estado = document.getElementById('estado');
-      try {
-        const respuesta = await fetch(
-          'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd&include_24hr_change=true'
-        );
+    <!-- Footer -->
+    <footer>
+        <p>🍎 Manzana (MNZN) — Una meme coin en Solana</p>
+        <p class="footer-small">Este proyecto es una meme coin con fines de entretenimiento. No es asesoramiento financiero.</p>
+    </footer>
 
-        if (!respuesta.ok) {
-          throw new Error('Error HTTP: ' + respuesta.status);
-        }
-
-        const data = await respuesta.json();
-
-        // Actualizar precios
-        document.getElementById('precio-btc').textContent =
-          formatoUSD.format(data.bitcoin.usd);
-        document.getElementById('precio-eth').textContent =
-          formatoUSD.format(data.ethereum.usd);
-
-        // Mostrar hora de actualización
-        const ahora = new Date().toLocaleTimeString('es-ES');
-        estado.textContent = 'Última actualización: ' + ahora;
-        estado.classList.remove('error');
-
-      } catch (error) {
-        console.error('Error al obtener precios:', error);
-        estado.textContent = '⚠️ Error al conectar con CoinGecko';
-        estado.classList.add('error');
-      }
-    }
-
-    // Ejecutar al cargar la página
-    obtenerPrecios();
-
-    // Actualizar cada 60 segundos (respetando el límite de la API gratuita)
-    setInterval(obtenerPrecios, 60000);
-  </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
